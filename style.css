@@ -23,10 +23,11 @@ button{
     cursor: pointer;
     display: inline-block;
     padding: 10px 15px;
-    transition: background .3s ease; 
+    transition: background .2s ease; 
 }
 .btn:is(:active, :hover) {
-    background-color: rgb(99, 255, 164);;
+    background-color: rgb(99, 255, 164);
+    transform: scale(1.05);
 }
 
 .form-section {
@@ -62,7 +63,8 @@ button{
         }
         .form-section .error-message{
             color: #6d0000;
-            font-weight: 700px;
+            font-weight: 700;
+            font-size: .8em;
             margin-top: 5px;
         }
         
