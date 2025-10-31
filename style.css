@@ -5,8 +5,65 @@
     outline: 0;
     padding: 0;
 }
-
-button {
-    background-color: transparent;
-    cursor: pointer;
+body {
+    font-family: sans-serif;
 }
+main {
+    padding: 20px;
+}
+button{
+    background-color: transparent;
+    font-size: inherit;
+}
+
+    
+.btn {
+    background-color: rgb(191, 236, 210);
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px;
+    transition: background .3s ease; 
+}
+.btn:is(:active, :hover) {
+    background-color: rgb(99, 255, 164);;
+}
+
+.form-section {
+    margin-bottom: 15px;
+}
+    .form-section label {
+        font-weight: 700;
+    }
+
+        .form-section.error label{
+            color: #6d0000;
+        }
+
+    /* Tous les <input> et <label> enfants direct d'un <element classe=form-section>*/
+    .form-section > :is(label,label) {
+        display: block;
+    }
+
+    /* Tous les <input>, qui ne sont pas des <element type="checkbox">, enfants direct d'un <element classe=form-section>*/
+    .form-section > input:not([type="checkbox"]) {
+        border: 1px solid #aaa;
+        border-radius: 2px;
+        padding: 7px 15px;
+    }
+
+        /* Tous les <input>, qui ne sont pas des <element type="checkbox">, enfants direct d'un <element classe=form-error>*/
+        .form-section.error > input:not([type="checkbox"]) {
+            background-color: #ffc5c5;
+            border: 2px solid #ac0000;
+            border-radius: 2px;
+            color: #6d0000;
+            padding: 9px 14px;
+        }
+        .form-section .error-message{
+            color: #6d0000;
+            font-weight: 700px;
+            margin-top: 5px;
+        }
+        
+

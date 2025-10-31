@@ -7,12 +7,33 @@
     <title>Controle de Saisie</title>
 </head>
 <body>
-    <h1>HTML - CSS - JS : CONTROLE DE SAISIE</h1>
+    <main>
+        <h1>HTML - CSS - JS : CONTROLE DE SAISIE</h1>
+        <h2>Inscription</h2>
+        <form action="" method="post" novalidate>
+            <!--Prénom-->
+            <div class="form-section">
+                <label for="input-firstname">Prénom</label>
+                <input type="text" name="firstname" id="input-firstname" placeholder="Prénom">
+            </div>
+            <!--Nom-->
+            <div class="form-section">
+                <label for="input-lastname">Nom</label>
+                <input type="text" name="lastname" id="input-lastname" placeholder="Nom">
+            </div>
+            <!--Email-->
+            <div class="form-section">
+                <label for="input-email">Email</label>
+                <input type="text" name="Email" id="input-email" placeholder="Email">
+            </div>
+            <div>
+                <button type="submit" class="btn">S'inscrire</button>
+            </div>
 
-
-
-
+        </form>
+    </main>
     
+
     <script src="script.js"></script>
 </body>
 </html>
